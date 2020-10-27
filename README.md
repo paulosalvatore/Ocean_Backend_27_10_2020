@@ -1,3 +1,16 @@
+# Instalação e configuração do projeto
+
+1. Baixar o repositório em https://github.com/paulosalvatore/Ocean_Backend_22_10_2020 (clicando em `Code -> Download ZIP`)
+2. Extrai o arquivo em um pasta, se possível em `C:/GitHub`
+3. Abre essa pasta
+4. A partir daqui depende do Node instalado, então garante que a instalação terminou. https://nodejs.org/en/. Também é importante ter o Visual Studio Code instalado. (https://code.visualstudio.com/download)
+5. No VS Code, clique em `File -> Open Folder`
+6. Procure pela pasta do projeto, abra ela e depois clique em `Selecionar pasta`
+7. Vá em `Terminal -> New Terminal` para abrir uma janela do terminal no VS Code
+8. No terminal, digite o comando `npm install` ou simplesmente `npm i` e faça a instalação do projeto. Note que isso criará a pasta `node_modules`
+
+# Explicação sobre Backend
+
 Servidor
 
 Comunicação é sempre via texto
