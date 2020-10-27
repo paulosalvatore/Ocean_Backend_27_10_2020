@@ -66,6 +66,16 @@ app.get('/mensagem/:id', function (req, res) {
     res.send(mensagem);
 });
 
+// Update
+app.put('/mensagem/:id', function (req, res) {
+    const id = req.params.id;
+    const texto = req.body.texto;
+
+    mensagens[id - 1] = texto;
+
+    res.send(`A mensagem de ID '${id}', foi editada com sucesso para o texto '${texto}'.`);
+});
+
 app.listen(port, function () {
     console.log('App rodando em http://localhost:' + port);
 });
