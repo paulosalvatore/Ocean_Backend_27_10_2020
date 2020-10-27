@@ -56,6 +56,14 @@ app.post('/mensagem', function (req, res) {
 
     res.send(`A mensagem '${texto}' foi criada com sucesso.`);
 });
+
+// Read Single
+app.get('/mensagem/:id', function (req, res) {
+    const id = req.params.id;
+
+    const mensagem = mensagens[id - 1];
+
+    res.send(mensagem);
 });
 
 app.listen(port, function () {
