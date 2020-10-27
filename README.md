@@ -8,6 +8,7 @@
 6. Procure pela pasta do projeto, abra ela e depois clique em `Selecionar pasta`
 7. Vá em `Terminal -> New Terminal` para abrir uma janela do terminal no VS Code
 8. No terminal, digite o comando `npm install` ou simplesmente `npm i` e faça a instalação do projeto. Note que isso criará a pasta `node_modules`
+9. Para rodar, digite no terminal o comando `node index`. Isso iniciará o servidor na rota `http://localhost:3000`
 
 # Explicação sobre Backend
 
