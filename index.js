@@ -73,7 +73,16 @@ app.put('/mensagem/:id', function (req, res) {
 
     mensagens[id - 1] = texto;
 
-    res.send(`A mensagem de ID '${id}', foi editada com sucesso para o texto '${texto}'.`);
+    res.send(`A mensagem de ID '${id}' foi editada com sucesso para o texto '${texto}'.`);
+});
+
+// Delete
+app.delete('/mensagem/:id', function (req, res) {
+    const id = req.params.id;
+
+    delete mensagens[id - 1];
+
+    res.send(`A mensagem de ID '${id}' foi removida com sucesso.`);
 });
 
 app.listen(port, function () {
