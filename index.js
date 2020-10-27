@@ -50,7 +50,12 @@ app.get('/mensagem', function (req, res) {
 
 // Create
 app.post('/mensagem', function (req, res) {
-    res.send(req.body);
+    const texto = req.body.texto;
+
+    mensagens.push(texto);
+
+    res.send(`A mensagem '${texto}' foi criada com sucesso.`);
+});
 });
 
 app.listen(port, function () {
