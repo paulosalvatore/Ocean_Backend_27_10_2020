@@ -22,6 +22,60 @@
 				"url": "{{API_URL}}/mensagem"
 			},
 			"response": []
+		},
+		{
+			"name": "Ler uma mensagem pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{API_URL}}/mensagem/5f98b03e45b06c9dc8b5fc66"
+			},
+			"response": []
+		},
+		{
+			"name": "Remover uma mensagem pelo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{API_URL}}/mensagem/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Mensagem de teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{API_URL}}/mensagem"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar mensagem pelo ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"texto\": \"Mensagem atualizada teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{API_URL}}/mensagem/5f98b03e45b06c9dc8b5fc66"
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
